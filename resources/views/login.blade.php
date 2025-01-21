@@ -39,7 +39,7 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <div class="d-flex gap-2 justify-content-between">
+                  <div class="d-flex gap-2 justify-content-between yep">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox"  name="rememberMe" id="rememberMe">
                       <label class="form-check-label text-secondary" for="rememberMe">
