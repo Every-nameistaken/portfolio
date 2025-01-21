@@ -12,7 +12,7 @@
         @endsession
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Got a question, proposal or just want to say hello? Leave a message</p>
+          <p>Got a question, proposal or just want to say hello? Leave a message.</p>
         </div>
 
         <div>
