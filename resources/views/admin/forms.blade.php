@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -31,7 +31,11 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
 
-    @vite(['resources/css/adminCss.css','resources/js/adminMain.js','resources/sass/app.scss', 'resources/js/app.js','/resources/css/style.css',"/resources/css/bootstrap.min.css","/resources/css/font-awesome.min.css","/resources/css/nice-select.css","/resources/css/owl.carousel.min.css","/resources/css/magnific-popup.css","/resources/css/slicknav.min.css","/resources/js/jquery-3.3.1.min.js","/resources/js/bootstrap.min.js","/resources/js/jquery.magnific-popup.min.js","/resources/js/jquery.slicknav.js","/resources/js/owl.carousel.min.js","/resources/js/jquery.nice-select.min.js","/resources/js/mixitup.min.js","/resources/js/main.js" ])
+    @vite([
+        'resources/css/adminCss.css',
+        'resources/js/adminMain.js',
+        'resources/sass/app.scss',
+        'resources/js/app.js'])
 </head>
 <body>
         <div class="content">
@@ -436,7 +440,7 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <i style="position: fixed; right: 10px; bottom: 10px;" class="btn btn-lg btn-secondary btn-lg-square back-to-top bi bi-airplane"></i>
 
     <script>
 

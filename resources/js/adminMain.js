@@ -10,6 +10,15 @@ plus_icon.addEventListener('click',()=>{
 
 });
 
+let toTopIcon = document.querySelector('.back-to-top')
+console.log(toTopIcon);
+
+toTopIcon.addEventListener('click',()=>{
+    scrollTo(0,0);
+
+});
+
+
 
 (function ($) {
     "use strict";
@@ -33,46 +42,11 @@ plus_icon.addEventListener('click',()=>{
             $('.back-to-top').fadeOut('slow');
         }
     });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
-
-
     // Sidebar Toggler
     $('.sidebar-toggler').click(function () {
         $('.sidebar, .content').toggleClass("open");
         return false;
     });
-
-
-    // Progress Bar
-    $('.pg-bar').waypoint(function () {
-        $('.progress .progress-bar').each(function () {
-            $(this).css("width", $(this).attr("aria-valuenow") + '%');
-        });
-    }, {offset: '80%'});
-
-
-    // Calender
-    $('#calender').datetimepicker({
-        inline: true,
-        format: 'L'
-    });
-
-
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        items: 1,
-        dots: true,
-        loop: true,
-        nav : false
-    });
-
-
-    // Worldwide Sales Chart
 
 
 

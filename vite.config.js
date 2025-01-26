@@ -9,6 +9,9 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/css/style.css',
                 'resources/js/main.js',
+                'resources/css/adminCss.css',
+                'resources/js/adminMain.js',
+
             ],
             refresh: true,
         }),

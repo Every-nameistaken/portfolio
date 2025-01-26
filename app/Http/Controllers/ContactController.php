@@ -2,10 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ContactVal;
-use App\Models\Contact;
 use App\Models\Profile;
+use App\Notifications\ContactToMe;
 use Illuminate\Http\Request;
+// use App\Notifications\contact;
+use App\Notifications\contact;
+use App\Http\Requests\ContactVal;
+use App\Models\Contact as ModelsContact;
+use App\Models\User;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Notification;
 
 class ContactController extends Controller
 {
@@ -15,9 +21,18 @@ class ContactController extends Controller
     }
     public function store(ContactVal $request){
         $fields = $request->validated();
-        Contact::create($fields);
+        $contact = ModelsContact::create($fields);
+
+        $user = User::find(1);
+
+        Notification::route('mail',$fields['email'])->notify(new contact($contact));
+        $user->notify(new ContactToMe($contact));
+
+
+
+
         return redirect()
         ->back()
-        ->with('success','Feedback sent successfully');
+        ->with('success','Email sent successfully');
     }
 }
