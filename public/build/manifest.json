@@ -1,7 +1,18 @@
 {
+  "resources/css/adminCss.css": {
+    "file": "assets/adminCss-CMjCZeOE.css",
+    "src": "resources/css/adminCss.css",
+    "isEntry": true
+  },
   "resources/css/style.css": {
     "file": "assets/style-Dev6uWoq.css",
     "src": "resources/css/style.css",
+    "isEntry": true
+  },
+  "resources/js/adminMain.js": {
+    "file": "assets/adminMain-C49JNxT8.js",
+    "name": "adminMain",
+    "src": "resources/js/adminMain.js",
     "isEntry": true
   },
   "resources/js/app.js": {
